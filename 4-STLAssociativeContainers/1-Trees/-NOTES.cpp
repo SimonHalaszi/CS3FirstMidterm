@@ -3,47 +3,52 @@ int main() {
 
     /* ---------------------------------------------------- //
 
-    * lists, list functions, specialized list functions
+    * trees, search trees and pairs
 
-    std::list, include <list>
+    Trees:
+        tree - a graph with no cycles
+        rooted tree - a tree with a single distinguished node - root
 
-    - Implemented as doubly linked list
-        - Supports constant time insertion/deletion of elements
-        anywhere in the list.
-        - Linear time for access to elements
+    Given a node N
+        - ancestors - nodes on path from N to root
+        - descendants - nodes whose ancestor is N
+        - subtree - all descendants of note N, tree that would
+        be made if N was root.
+        - parent - closest ancestor
+        - child - closest descendant
+        - leaf - node with no children, root - node with no parents
+        - height - length of longest path to leaf
+        - depth - length of path N to the root
 
-    - No indexing or arithmetic on iterators - only increment/decrement
-        - This is because implementations wouldnt be constant time
-        but instead linear.
+    Binary tree - Each parent has at most two children
+    Search tree - Nodes store keys
+    Sorted binary tree - Key in node is greater than keys
+    in left subtree and less than keys in right subtree. Heap
+    data structure used in priority_queue uses this
 
-    - front(), back(), begin(), end() are constant time
+    Balanced search tree - Constraint on differences in
+    subtrees height
+    Self-balancing search tree - Maintains balance under insert/
+    delete operations.
+    Red-black tree - Self-balanced binary search tree with these
+    properties
+        - root and leaves are black
+        - insertion - adding node and coloring it red
+        - red node's children are always black, hench the name
+        - depth of one leaf is no more than twice the depth
+        of another
+        - guarantees O(log(n))
+            - lookups
+            - insetions/deletions
+    
+        Structure of tree depends on inserted order. Sortedness
+        of red-black tree is not clearly apparent to an
+        unknowledgable progammer. Given an element N say
+        N will be inserted in a fashion where if it is less
+        than already existing child or it will go the left.
+        And if N is greater than already existing it will go
+        to the right.
 
-    - Updating operations: push_front(), pop_front(), push_back(),
-    pop_back(), emplace_back(), insert(), erase() are all implemented
-    in constant time
-
-    - clear() however is linear
-
-    - size(), resize(), and empty() are supported but no capacity()
-        - list is not memory opaque. Memory could be anywhere
-
-    - splice() - constant time insert of another list to a posiition
-    in this list - other list has its elements stripped.
-        // range inside of list2
-        list1.splice(list1.begin(), list2, list2Itr1, list2Itr2); 
-        // all of list2
-        list1.splice(list1.begin(), list2); 
-
-    - remove(value) - removes all instances of a given value
-
-    - unique() - eliminates CONSECUTIVE duplicates of values.
-    use on sorted list for best result.
-
-    - merge() - merges two sorted lists. not just unique values.
-
-    - sort() - sorts a list
-
-    - reverse() - reverses a list
 
     // ---------------------------------------------------- */
 }

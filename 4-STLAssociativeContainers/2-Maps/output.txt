@@ -1,0 +1,14 @@
+mapic: 
+Key: 1 Data Value: c
+Key: 4 Data Value: f
+Key: 10 Data Value: @
+mapic: 
+Key: 1 Data Value: c
+Key: 4 Data Value: f
+Key: 10 Data Value: @
+mapic[10]: @
+std::map<int, char>::iterator it = mapic.find(10);
+Key: 10 Data Value: @
+Yeah that key doesnt exist
+mapic: 
+Key: 10 Data Value: @
