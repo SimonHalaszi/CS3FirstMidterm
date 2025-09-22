@@ -1,0 +1,14 @@
+Pushing to front and back is constant time
+d.push_front(10); 
+d.push_back(10); 
+Constant time access d[0]: 10
+Adding a bunch of elements to d 
+Pushing with front and back, constant time
+Printing elements in d with constant time access
+d: 9 8 7 6 5 4 3 2 1 0 10 10 0 1 2 3 4 5 6 7 8 9 
+std::deque<int>::iterator it = d.begin();
+it += 5; // Iterator arithmetic. More on this later
+d.erase(it);
+Erasing element at the 5th index of d; O(N) operation
+Printing elements in d with constant time access
+d: 9 8 7 6 5 3 2 1 0 10 10 0 1 2 3 4 5 6 7 8 9 

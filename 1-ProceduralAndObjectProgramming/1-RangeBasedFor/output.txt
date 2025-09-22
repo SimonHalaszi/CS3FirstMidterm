@@ -1,0 +1,15 @@
+Range based for with const pass-by reference. Printing all elements in v: 
+10 20 30 40 50 
+
+Range based for with pass-by value. Adding 10 to each element of v's using copy: 
+20 30 40 50 60 
+
+Range based for with const pass-by reference. Printing all elements in v. Unchanged: 
+10 20 30 40 50 
+
+Range based for with pass-by reference. Adding 10 to each element of v's using reference: 
+20 30 40 50 60 
+
+Range based for with const pass-by reference. Printing all elements in v. Changed: 
+20 30 40 50 60 
+

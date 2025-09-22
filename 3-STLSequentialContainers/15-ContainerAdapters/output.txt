@@ -1,0 +1,4 @@
+s.top(); 40
+q.front(); 40
+q.back(); 50
+q.top(); 40

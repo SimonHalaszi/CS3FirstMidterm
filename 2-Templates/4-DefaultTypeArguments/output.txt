@@ -1,0 +1,7 @@
+TemplateClass<> defaultObj: 
+0 100
+TemplateClass<std::string> defaultWString 
+ 100
+TemplateClass<double, 431> doubleObj; 
+doubleObj.setMember(3.14); 
+3.14 431

@@ -1,0 +1,7 @@
+Standing alone! Here's T, Hello, World!
+3
+Woah im out of line! Here's T, 3
+
+3.14
+Woah im being used for doubles! Here's T, 3.14
+

@@ -1,0 +1,14 @@
+intObjOne: 20
+intObjTwo: 20
+victimDouble: 3.14
+intObjOne == intObjTwo, according to genericFriend
+But the genericFriend of supposed int instantiation used victimDouble private variables
+This shouldnt happen victimDouble isnt typed int!
+victimDouble: 67.67
+intObjOne == intObjTwo, according to specificFriend
+specificFriend couldnt touch victimDouble.
+intObjOne == intObjTwo, according to overloaded equality
+These friends work perfectly with nested templates!.
+nestedOne: 20
+nestedTwo: 20
+nestedOne == nestedTwo, according to overloaded equality

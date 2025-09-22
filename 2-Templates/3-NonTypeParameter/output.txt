@@ -1,0 +1,5 @@
+TemplateClass<int, 10>: 0 0 0 0 0 0 0 0 0 0 
+TemplateClass<double, 5>: 0 0 0 0 0 
+doubleObj.setItems(3.14): 3.14 3.14 3.14 3.14 3.14 
+TemplateClass<bool>: 0 
+default value is 1 for size!

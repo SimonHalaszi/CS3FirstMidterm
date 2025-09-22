@@ -1,0 +1,54 @@
+Procedural rvalue Reference
+
+lvalueInt: 25
+rvalueRefOne to { 2 }: 2
+rvalueRefTwo to { lvalueInt/3+2 }: 5
+lvalueInt += 100 & rvalueRefTwo += 100
+lvalueInt: 125
+rvalueRefOne: 2
+rvalueRefTwo: 105
+
+lvalue pass in realint: 
+lvaluePassFunc(125)
+
+rvalue pass in 100 + 54 + 30: 
+rvaluePassFunc(184)
+
+rvalue pass in func(lvalueInt) which passes in lvalue: 
+lvaluePassFunc(125)
+rvaluePassFunc(125)
+
+lvaluePassFunc(125)
+caught last functions return rvalue with rvalueRefThree
+last functions return rvalue now has the scope of rvalueRefThree
+rvalueRefThree: 125
+
+rvalueReflvalueInt: 125
+reflvalueInt: 125
+lvalueInt: 125
+lvalueIntTwo: 125
+lvalueInt += 100 
+
+rvalueReflvalueInt: 225
+reflvalueInt: 225
+lvalueInt: 225
+lvalueIntTwo: 125
+
+Object Move Constructor and Assignment
+
+MyClassOne: 
+1 1 1 1 1 1 1 1 1 1 
+Pushed copy of MyClassOne into myClassVector
+MyClassTwo: 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+Moved MyClassTwo into myClassVector
+myClassVector contents: 
+1 1 1 1 1 1 1 1 1 1 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+MyClassThree: 
+empty 
+MyClassFour: 
+4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 
+Moved MyClassFour into MyClassThree
+MyClassThree: 
+4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 

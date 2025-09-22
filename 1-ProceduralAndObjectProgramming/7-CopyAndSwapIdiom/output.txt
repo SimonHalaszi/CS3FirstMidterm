@@ -1,0 +1,9 @@
+objOne: 10 10 10 10 10 10 10 10 10 10 
+objTwo: 40 40 40 40 40 40 40 40 40 40 
+Assigning objTwo into objOne using copy-and-swap idiom
+objOne: 40 40 40 40 40 40 40 40 40 40 
+objTwo: 40 40 40 40 40 40 40 40 40 40 
+Changing objTwo...
+objOne: 40 40 40 40 40 40 40 40 40 40 
+objTwo: 70 70 70 70 70 70 70 70 70 70 
+Deep copy made with copy-and-swap idiom. Because overload assignment takes right operand by value

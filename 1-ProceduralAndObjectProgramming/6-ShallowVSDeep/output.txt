@@ -1,0 +1,30 @@
+objOne: 10 10 10 10 10 10 10 10 10 10 
+Deep copying objOne into objTwo...
+objTwo: 10 10 10 10 10 10 10 10 10 10 
+Changing objTwo...
+objOne: 10 10 10 10 10 10 10 10 10 10 
+objTwo: 30 30 30 30 30 30 30 30 30 30 
+Shallow copying objOne into objThree...
+objThree: 10 10 10 10 10 10 10 10 10 10 
+Changing objThree...
+objOne: 50 50 50 50 50 50 50 50 50 50 
+objThree: 50 50 50 50 50 50 50 50 50 50 
+Uh oh objThree changed objOne. Dynamic classes need deep copies. 
+Deep assigning objOne into objTwo...
+objTwo: 50 50 50 50 50 50 50 50 50 50 
+Changing objTwo...
+objOne: 50 50 50 50 50 50 50 50 50 50 
+objTwo: 30 30 30 30 30 30 30 30 30 30 
+Shallow assigning objOne into objTwo...
+objTwo: 50 50 50 50 50 50 50 50 50 50 
+Changing objTwo...
+objOne: 100 100 100 100 100 100 100 100 100 100 
+objTwo: 100 100 100 100 100 100 100 100 100 100 
+objThree: 100 100 100 100 100 100 100 100 100 100 
+Uh oh objTwo changed objOne and objThree. Dynamic classes need deep assigns. 
+Shallow assigning objOne into objTwo...
+objTwo: 395158425 23164 1592961830 -1404737585 100 100 100 100 100 100 
+Where did the array go?
+shallowAssign deletes the dynamic memory only if this != &rhs. Which is true here. But they share the same pointer. BAD.
+Destructor is commented out, why? 
+Since we did bad shallow copies and assigns the destructor will try double free memory. BAD. 
