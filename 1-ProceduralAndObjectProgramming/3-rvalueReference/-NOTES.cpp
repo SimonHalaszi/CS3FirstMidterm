@@ -48,9 +48,9 @@ int main() {
 
     class MyClass{
         // Move Constructor
-        MyClass(MyClass&& moveMe);
+        MyClass(MyClass&& moveMe) noexcept;
         // Move Assignment
-        MyClass& operator=(MyClass&& moveMe);
+        MyClass& operator=(MyClass&& moveMe) noexcept;
     };
 
     /* ---------------------------------------------------- //
