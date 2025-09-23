@@ -20,13 +20,13 @@ int main() {
 
     // ---------------------------------------------------- //
 
-    // Specify at definition, convention is to not specify here
+    // Specify at declration, convention is to specify here
     void move(int from, int to = 0, int by = 1);
 
     /*
     Will cause errors because we are trying to define at both
 
-    // Specfiy at declaration, convention is to specify here
+    // Specfiy at definition, convention is to not specify here
     void move(int from, int to = 0, int by = 1) {
         return;
     }
