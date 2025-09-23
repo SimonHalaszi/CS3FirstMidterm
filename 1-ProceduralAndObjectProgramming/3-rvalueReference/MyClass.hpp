@@ -29,7 +29,7 @@ class MyClass {
         // Overloaded Assignment: Normal
         MyClass& operator=(const MyClass&);
         // Overloaded Assignment: Move
-        MyClass& operator=(MyClass&&);
+        MyClass& operator=(MyClass&&) noexcept;
         // Destructor
         ~MyClass() { delete [] intArr_; }
 
