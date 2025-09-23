@@ -1,5 +1,5 @@
 /*
-STL SEQUENTIAL CONTAINERS
+STL ASSOCIATIVE CONTAINERS
 
 * trees, search trees and pairs
 

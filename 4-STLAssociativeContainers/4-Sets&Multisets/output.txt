@@ -1,0 +1,17 @@
+s.insert(1) was good: 1
+s.insert(4) was good: 4
+s.insert(1) was bad! no duplicates: 1
+s.insert(8) was good: 8
+s: 1 4 8 
+s: 1 4 8 20 
+os: 1 3 6 9 
+s: 1 3 4 6 8 9 20 
+s: 3 4 6 8 9 20 
+s: 4 6 8 9 20 
+os: 6 9 
+os: 
+ss: 1 1 1 1 3 5 5 5 6 6 
+ss: 5 5 5 6 6 
+there was this amount of sixes: 2
+ss: 5 5 5 
+ss: 

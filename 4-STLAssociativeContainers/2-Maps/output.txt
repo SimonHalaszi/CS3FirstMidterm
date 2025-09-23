@@ -12,3 +12,43 @@ Key: 10 Data Value: @
 Yeah that key doesnt exist
 mapic: 
 Key: 10 Data Value: @
+mapic: 
+Key: 2 Data Value: a
+Key: 10 Data Value: @
+mapic: 
+Key: 2 Data Value: b
+Key: 10 Data Value: @
+insert happended
+mapic: 
+Key: 1 Data Value: c
+Key: 2 Data Value: b
+Key: 10 Data Value: @
+mapic: 
+Key: 1 Data Value: c
+Key: 2 Data Value: b
+Key: 10 Data Value: @
+Key: 12 Data Value: j
+Key: 13 Data Value: d
+mapic: 
+Key: 1 Data Value: c
+Key: 2 Data Value: b
+Key: 10 Data Value: @
+Key: 12 Data Value: j
+Key: 13 Data Value: d
+Key: 16 Data Value: e
+newmapic: 
+Key: 1 Data Value: c
+Key: 2 Data Value: b
+Key: 10 Data Value: @
+itr erased last element
+mapic: 
+Key: 1 Data Value: c
+Key: 2 Data Value: b
+Key: 10 Data Value: @
+Key: 12 Data Value: j
+Key: 13 Data Value: d
+mapic: 
+Key: 1 Data Value: c
+Key: 2 Data Value: b
+Key: 13 Data Value: d
+erased one element with key 1

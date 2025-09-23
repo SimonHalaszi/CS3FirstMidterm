@@ -1,0 +1,26 @@
+um: 
+key: 9
+element: j
+key: 8
+element: i
+key: 7
+element: h
+key: 6
+element: g
+key: 5
+element: f
+key: 4
+element: e
+key: 3
+element: d
+key: 2
+element: c
+key: 1
+element: b
+key: 0
+element: a
+13
+0.769231
+1
+1
+b

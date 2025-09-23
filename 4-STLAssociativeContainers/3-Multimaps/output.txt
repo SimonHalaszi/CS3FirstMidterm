@@ -1,0 +1,36 @@
+char with key 1: c
+char with key 1: d
+char with key 1: e
+we got char: c
+we got c: c
+mm: 
+e.first: 2 e.second: d
+e.first: 2 e.second: d
+e.first: 3 e.second: e
+mm: 
+e.first: 1 e.second: d
+e.first: 1 e.second: d
+e.first: 1 e.second: e
+e.first: 2 e.second: d
+e.first: 2 e.second: d
+e.first: 3 e.second: e
+mm: 
+e.first: 3 e.second: e
+mm: 
+e.first: 1 e.second: d
+e.first: 1 e.second: d
+e.first: 1 e.second: e
+e.first: 2 e.second: d
+e.first: 2 e.second: d
+e.first: 2 e.second: e
+e.first: 3 e.second: e
+mm: 
+e.first: 2 e.second: d
+e.first: 2 e.second: d
+e.first: 2 e.second: e
+e.first: 3 e.second: e
+mm: 
+e.first: 2 e.second: d
+e.first: 2 e.second: d
+e.first: 2 e.second: e
+e.first: 3 e.second: e

@@ -5,50 +5,59 @@ int main() {
 
     * trees, search trees and pairs
 
-    Trees:
-        tree - a graph with no cycles
-        rooted tree - a tree with a single distinguished node - root
+    Tree - A graph with no cycles
+    Rooted Tree - A tree with a single distinguished node - Root
 
     Given a node N
-        - ancestors - nodes on path from N to root
-        - descendants - nodes whose ancestor is N
-        - subtree - all descendants of note N, tree that would
-        be made if N was root.
-        - parent - closest ancestor
-        - child - closest descendant
-        - leaf - node with no children, root - node with no parents
-        - height - length of longest path to leaf
-        - depth - length of path N to the root
+        - Ancestors - Nodes on path from N to root
+        - Descendants - Nodes whose ancestor is N
+        - Subtree - All descendants of a node
+        - Parent - Closest Ancestor
+        - Child - Closest Descendant
+        - Leaf - Node with no children.
+        - Root - Node with no parents.
+        - Height - Length of longest path to a leaf
+        - Depth - Length of path to the root
 
     Binary tree - Each parent has at most two children
-    Search tree - Nodes store keys
-    Sorted binary tree - Key in node is greater than keys
-    in left subtree and less than keys in right subtree. Heap
-    data structure used in priority_queue uses this
+    Search Tree - Nodes store keys.
+    Sorted Binary Tree - Key in node is greater than.
+    keys in left subtree and less than keys right subtree.
+    Heap data structure uses this.
 
-    Balanced search tree - Constraint on differences in
-    subtrees height
-    Self-balancing search tree - Maintains balance under insert/
-    delete operations.
-    Red-black tree - Self-balanced binary search tree with these
-    properties
-        - root and leaves are black
-        - insertion - adding node and coloring it red
-        - red node's children are always black, hench the name
-        - depth of one leaf is no more than twice the depth
-        of another
-        - guarantees O(log(n))
-            - lookups
-            - insetions/deletions
-    
-        Structure of tree depends on inserted order. Sortedness
-        of red-black tree is not clearly apparent to an
-        unknowledgable progammer. Given an element N say
-        N will be inserted in a fashion where if it is less
-        than already existing child or it will go the left.
-        And if N is greater than already existing it will go
-        to the right.
+    Search Trees
 
+    Balanced search tree - constraint on differences in subtrees height
+    Self-balancing search tree - Maintains balance under insert/delete operations
+    Red-Black tree - Self-balanced binary search tree with these properties
+        - Every node is either red or black
+        - The root is always black
+        - All null nodes (NIL nodes) are considered black
+        - A red node does not have a red child (no adjacent red nodes)
+        - Every path from a given node to any of its leaf nodes goes through
+        the same number of black nodes (black-height property)
+        - Guarantees O(log(n))
+            - Lookups
+            - Insertions/Deletions
+        - New nodes are initially inserted as red to preserve black-height
+        - Insertions may rebalance the tree; rotations and recoloring can
+        affect every node on the path to the insertion point
+        - Black-height (and thus tree height) grows slowly - roughly when
+        the capacity at current black-height is exhausted
+
+    Pairs
+
+    - Aggregate values of two, possible different, types
+    - Used in associative containers
+    - Defined in <utility>
+    - May use a two-argument constructor or no argument constructor
+        - No single argument constructor
+    - May copy and compare
+    - May access individual elements with 'first' and 'second'
+    - May create with std::make_pair(arg1, arg2) function that 
+    returns a pair composed of arg1 and arg2 // Type of pair
+    gets deduced by arguments
+        
 
     // ---------------------------------------------------- */
 }

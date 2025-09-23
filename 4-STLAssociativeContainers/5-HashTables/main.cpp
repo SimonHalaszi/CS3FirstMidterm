@@ -1,5 +1,5 @@
 /*
-STL SEQUENTIAL CONTAINERS
+STL ASSOCIATIVE CONTAINERS
 
 * hash tables
 
@@ -13,4 +13,6 @@ rm ./a.out
 
 int main() {
  
+    // No code for this. Its just notes
+
 }
