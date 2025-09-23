@@ -49,7 +49,7 @@ MyClass& MyClass::operator=(const MyClass& copyMe) {
 // Overloaded Assignment: Move
 // (copy-n-swap idiom is incompatbile with move assingment)
 // Makes no sense to use it. Defeats whole purpose of move semantics
-MyClass& MyClass::operator=(MyClass&& moveMe) {
+MyClass& MyClass::operator=(MyClass&& moveMe) noexcept {
     if(this != &moveMe) {
         delete [] this->intArr_;
         this->size_ = moveMe.size_;
