@@ -31,3 +31,9 @@
     All other containers have iterator postfix and prefix increment and decrement.
     And only map has indexing though it is not comparable.
 
+7.) Amortized complexity is the average cost of an operation over a long sequence of
+    operations, accounting for both frequent cheap operations and expensive
+    occasional operations.
+
+8.) Nontype template parameters are treated as constants
+
