@@ -9,6 +9,10 @@ int main() {
     container for specific purpose by limiting interface:
     NO iterators, NO indexing, FEW functions
 
+    - Adapter pattern - A generic class that expects a type
+    and a container type. Container is private so interface is 
+    limited, but the public functions implement container functions.
+
     - size(), empty(), swap() are supported
 
     stack. First in Last out / Last in First out
@@ -28,6 +32,7 @@ int main() {
         - Needs <queue> underlying default vector, possible deque
         - push() / pop() - add/remove
         - top() - returns highest priority element
+        - Underlying heap structure
 
         Note: type needs less than operator
 

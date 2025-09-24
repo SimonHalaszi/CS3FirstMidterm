@@ -24,7 +24,7 @@ int main() {
         MovableClass(int i, int j); // constructor
         std::deque<MovableClass<int>> d;
         d.emplace_back(5, 10); // invokes constructor on new element at back
-        d.emplace(d.begin(), 1, 2);
+        it = d.emplace(it, 1, 2);
 
 
 

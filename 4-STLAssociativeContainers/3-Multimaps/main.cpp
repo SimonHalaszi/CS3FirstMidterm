@@ -118,6 +118,8 @@ int main() {
     // Will also get rid of all elements with key 1
     mm.erase(1);
 
+    mm.insert({1, 'd'});
+
     std::cout << "mm: " << std::endl;
     for(const auto& e : mm) {
         std::cout << "e.first: " << e.first

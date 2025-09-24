@@ -19,8 +19,8 @@ int main() {
     Use rvalue reference instead of lvalue reference
 
     Define move-constructor and move-assignment
-        MovableClass(MovableClass&& src); // Move Constructor
-        MovableClass& operator=(MovableClass&& src) noexcept;
+        MovableClass(MovableClass&& src) noexcept; // Move Constructor
+        MovableClass& operator=(MovableClass&& src) noexcept; // Move Assignment
 
     The semantics is to use the original rather than create a copy.
     The original should be left in a "legal but undefined" state
@@ -57,6 +57,10 @@ int main() {
     moving of an lvalue, or any value, that will not need to be used
     after the call of std::move.
 
+    Compiler will implicitly use move semantics on rvalues. So no need
+    to std::move and object that gets returned unless that return was
+    a reference to an lvalue or pointer.
+
     Also worth noting not every type has move semantics. Int for example
     will just not 'move' it will just allocate a whole new space in memory
     for the int you are assigning to. So this is why knowing that std::move
@@ -64,7 +68,7 @@ int main() {
     type to actually move things. so int i = std::move(lvalueInt) will
     actually leave lvalueInt completely usable and wont even move it into i
 
-    Note: Compiler would automatically use move semantics for prvalues
+    Note: Compiler would automatically use move semantics for rvalues
           if semantics are defined.
 
     // ---------------------------------------------------- */

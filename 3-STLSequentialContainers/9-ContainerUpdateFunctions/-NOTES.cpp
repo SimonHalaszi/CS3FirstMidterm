@@ -9,24 +9,28 @@ int main() {
 
     insert() - for all sequential containers other than std::array and std::forward_list
 
-    insert(position, value);  // value insert
-    insert(position, repeats, value); // fill insert
-    insert(position, from, to); // will insert a range of elements to position
+    itr = insert(position, value);  // value insert
+    itr = insert(position, repeats, value); // fill insert
+    itr = insert(position, from, to); // will insert a range of elements to position
 
     forward_list has insert_after same overloads just will insert after position
 
     We did not study forward_list in class to heavily so ignoring it here
+
+    Returns iterator to first of the inserted elements.
     
     // ---------------------------------------------------- //
 
     erase() - for all sequential containers other than std::array and std::forward_list
 
-    erase(position);
-    erase(from, to);
+    itr =  erase(position);
+    itr =  erase(from, to);
 
     forward_list has erase_after same overloads just will erase after position
 
     We did not study forward_list in class to heavily so ignoring it here
+
+    Returns iterator to element after ones erased
 
     // ---------------------------------------------------- //
 
@@ -35,6 +39,9 @@ int main() {
     assign(from, to); // Replaces contents of callee with copies of contents
                          of inputted range, which could be of different container
                          type. Also works with intializer list.
+    assign({1, 2, 3});
+
+    Void function
                          
     // ---------------------------------------------------- //     
     
@@ -50,6 +57,12 @@ int main() {
     These returned iterators can be used to keep iterator validated without extra
     lines of code, and while keeping it in the desired spot.
 
+    // ---------------------------------------------------- //     
+    
+    Good rule of thumb, if a funciton takes an iterator from the object calling it,
+    then this function will return a validated iterator. For sequeuntial containers.
+
+    // ---------------------------------------------------- //     
 
     Loop-modification idiom
     

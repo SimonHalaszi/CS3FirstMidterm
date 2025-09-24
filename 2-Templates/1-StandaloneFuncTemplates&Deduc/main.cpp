@@ -14,9 +14,7 @@ rm ./a.out
 
 // Nothing useful just to show how this works
 template<typename T>
-T standaloneTemplate(const T& var) {
-    return var;
-}
+T standaloneTemplate(const T& var);
 
 int main() {
     int a = 1230;
@@ -43,4 +41,9 @@ int main() {
 
     std::string c = "Hello, World!";
     std::cout << standaloneTemplate(c) << std::endl;  
+}
+
+template<typename T>
+T standaloneTemplate(const T& var) {
+    return var;
 }

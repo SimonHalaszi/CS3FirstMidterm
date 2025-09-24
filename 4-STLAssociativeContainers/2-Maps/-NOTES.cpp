@@ -29,7 +29,7 @@ int main() {
     MAPS
 
     Declaring and Traversing
-        - Store sorted key/value pairs
+        - Stored and sorted by key/value pairs
         - Sorting is based on key
         - Insertion/Deletion/Lookup takes O(log(n)) time
         - Need <map> and std::map
@@ -85,16 +85,20 @@ int main() {
                 - true - element inserted
                 - false - key already has value
 
-        - Can insert with initializer list
-            - Returns iterator to made or existing pair
-            - map.insert({123, "j"});
+        - Can insert with initializer list std::make_pair()
+            - Returns iterator pair
+            - map.insert({123, 'j'});
+            - map.insert(std::make_pair(123, 'j'));
 
         - Can insert with a hint: Suggests optimal insertion position
             - Returns iterator to made or existing pair
             - May ignore hint if it's not optimal
             - For inserting the highest key value, map.end() is a good hint
             since the element will be inserted at the end
-            - map.insert(map.end(), {999, "j"});
+            - itr = map.insert(itr, {999, 'j'});
+            - Same logic that if a modify function takes an itr to its object
+            then it will return valid itr. Only exception we study is splice()
+            for list.
 
         - Can insert range
             - Copies range from another tree
@@ -105,8 +109,8 @@ int main() {
     Erasing
         - May erase at iterator or iterator range
             - Returns iterator to the next element past erased
-            - m.erase(it);
-            - m.erase(it1, it2);
+            - it = m.erase(it);
+            - it1 = m.erase(it1, it2);
         - Can also use erase(keyValue)
             - This returns number of nodes erased, useful for multimaps
         - clear() exist

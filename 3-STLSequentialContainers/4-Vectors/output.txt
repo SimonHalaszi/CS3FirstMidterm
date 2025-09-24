@@ -7,27 +7,29 @@ v.empty() is true
 // Vector has resize() function // Makes vector specified size, discards extra elements
 vv.resize(2); 
 3.14 3.53 
-vv.resize(8); 
-3.14 3.53 0 0 0 0 0 0 
+Buffer capacity after vv.resize(2): 4
+vv.resize(9); 
+3.14 3.53 0 0 0 0 0 0 0 
+Buffer capacity after vv.resize(9): 9
 // Vector is memory transparent container: below operations are available
 // capacity() - returns storage size current allocated to container. capacity() >= size()
-vv.capacity(); - 8
+vv.capacity(); - 9
 As vector grows with push_back(), most implementations double capacity when buffer fills
-Adding one more elements to full buffer of size 8
+Adding one more elements to full buffer of size 9
 vv.push_back(10);
-vv.capacity(); - 16
+vv.capacity(); - 18
 Vector has reserve() - allocates buffer with given space. But the size does not change.
 So no default values added to vector, like with resize()
 vv.reserve(32);
-3.14 3.53 0 0 0 0 0 0 10 
+3.14 3.53 0 0 0 0 0 0 0 10 
 // Reserving to a small value than size does nothing.
 vv.reserve(2);
-3.14 3.53 0 0 0 0 0 0 10 
+3.14 3.53 0 0 0 0 0 0 0 10 
 vv.capacity(); - 32
 // More explicit demonstration of vector filling up and doubling buffer
 std::vector<int> vvv;
-vvv.push_back(1); Capacity of buffer1
-vvv.push_back(1); Capacity of buffer2
-vvv.push_back(1); Capacity of buffer4
-vvv.push_back(1); Capacity of buffer4
-vvv.push_back(1); Capacity of buffer8
+vvv.push_back(1); Capacity of buffer: 1
+vvv.push_back(1); Capacity of buffer: 2
+vvv.push_back(1); Capacity of buffer: 4
+vvv.push_back(1); Capacity of buffer: 4
+vvv.push_back(1); Capacity of buffer: 8

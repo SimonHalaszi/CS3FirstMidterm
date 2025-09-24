@@ -15,14 +15,9 @@ int main() {
             - If you want to update use erase() then insert()
         - All expected inserts exist
             - insert(element); // returns iterator, bool pair
-            bool false = element was already there and iterator
-            will be to already existing element, bool true = element
-            was inserted and iterator will be to inserted element
+            Same as map.
             - insert(it, element); // hint insert, returns iterator
-            to already existing element if value was there or
-            to newly inserted element, returns just iterator
-            so that inputted iterator can be nicely updated for
-            loop modification idiom
+            Same as map.
             - s.insert(os.begin(), os.end()); // inserts elements
             from another sets given range
         - All expected erases
@@ -43,7 +38,7 @@ int main() {
             - insert(element) // Only returns iterator because
             insertion always succeeds (duplicates allowed)
             - erase(element); // Gets rid of all instances of
-            element
+            element, returns num
             - equal_range(element) // Returns pair of iterators
             that provide half open range containing all instances
             of element. For set, range contains at most 1 element,

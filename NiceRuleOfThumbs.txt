@@ -1,0 +1,25 @@
+1.) If an update function for a container, takes an std::container<type>::iterator
+    then it will 99% of the time return a std::container<type>::iterator. Only
+    exception to this rule we learn of is list splice()...
+    Ex: list1.splice(list1itr, list2, list2itr1, list2itr2);
+    splice() is void, why? Because all list1itr, list2itr1, and list2itr2 are all
+    still valid. Just list2itr1 and list2itr2 will now iterate inside of list1.
+    And the return iterator you would expect from any other insert function is
+    the value of list2itr1.
+
+2.) Sequential containers and Some Associative Container functions -
+    Insert iterator return = first inserted element
+    Erase interator return = next element after erased
+
+3.) Associative containers - Return iterator bool pairs for the inserting of 
+    an element given an element value. Otherwise they are void or iterator.
+    Erase(itr) will give next element iterator, Erase(element) will give 
+    an integer. equal_range(element) is iterator pair.
+    - Hint insert = get iterator (takes iterator from container)
+    - Range insert = void ( does not take iterator from container )
+    - Erase(itr) or Erase(itr1, itr2) = get iterator ( takes iterator from container )
+    - equal_range(element) = iterator pair ( half open range for all elements = to element )
+
+4.) For multi associative containers - Insert element will give you just an
+    iterator. (Cant fail)
+

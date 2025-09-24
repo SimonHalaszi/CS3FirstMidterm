@@ -40,15 +40,17 @@ int main() {
         std::cout << e << " ";
     }
     std::cout << std::endl;
+    std::cout << "Buffer capacity after vv.resize(2): " << vv.capacity() << std::endl;
 
     // resize() to bigger vector will use default constructor/value for type and allocate 
     // buffer of the given size.
-    std::cout << "vv.resize(8); " << std::endl;
-    vv.resize(8);
-    for(const auto& e : vv) {       // 3.14 3.53 0 0 0 0 0 0
+    std::cout << "vv.resize(9); " << std::endl;
+    vv.resize(9);
+    for(const auto& e : vv) {       // 3.14 3.53 0 0 0 0 0 0 0
         std::cout << e << " ";
     }
     std::cout << std::endl;
+    std::cout << "Buffer capacity after vv.resize(9): " << vv.capacity() << std::endl;
 
     // Vector is memory transparent container: below operations are available
     std::cout << "// Vector is memory transparent container: below operations are available" << std::endl;

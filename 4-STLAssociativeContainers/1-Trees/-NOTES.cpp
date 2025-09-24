@@ -12,18 +12,18 @@ int main() {
         - Ancestors - Nodes on path from N to root
         - Descendants - Nodes whose ancestor is N
         - Subtree - All descendants of a node
-        - Parent - Closest Ancestor
-        - Child - Closest Descendant
+        - Parent - Closest Ancestor to N
+        - Children - Closest Descendants to N
         - Leaf - Node with no children.
         - Root - Node with no parents.
         - Height - Length of longest path to a leaf
-        - Depth - Length of path to the root
+        - Depth - Length of path to the root from N
 
     Binary tree - Each parent has at most two children
     Search Tree - Nodes store keys.
     Sorted Binary Tree - Key in node is greater than.
     keys in left subtree and less than keys right subtree.
-    Heap data structure uses this.
+    Heap data structure uses this. priority_queue implements.
 
     Search Trees
 
@@ -56,8 +56,7 @@ int main() {
     - May access individual elements with 'first' and 'second'
     - May create with std::make_pair(arg1, arg2) function that 
     returns a pair composed of arg1 and arg2 // Type of pair
-    gets deduced by arguments
-        
+    gets deduced by arguments  
 
     // ---------------------------------------------------- */
 }
