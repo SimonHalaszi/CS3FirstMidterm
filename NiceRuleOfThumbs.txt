@@ -7,11 +7,15 @@
     And the return iterator you would expect from any other insert function is
     the value of list2itr1.
 
-2.) Sequential containers and Some Associative Container functions -
+2.) Inserts that take an iterator always insert before that iterator
+    other than forward_list, erases that take an iterator always erase
+    at that iterator.
+
+3.) Sequential containers and Some Associative Container functions -
     Insert iterator return = first inserted element
     Erase interator return = next element after erased
 
-3.) Associative containers - Return iterator bool pairs for the inserting of 
+4.) Associative containers - Return iterator bool pairs for the inserting of 
     an element given an element value. Otherwise they are void or iterator.
     Erase(itr) will give next element iterator, Erase(element) will give 
     an integer. equal_range(element) is iterator pair.
@@ -20,10 +24,10 @@
     - Erase(itr) or Erase(itr1, itr2) = get iterator ( takes iterator from container )
     - equal_range(element) = iterator pair ( half-open range for all elements = to element )
 
-4.) For multi associative containers - Insert element will give you just an
+5.) For multi associative containers - Insert element will give you just an
     iterator. (Cant fail)
 
-5.) Indexing and iterator arithmetic only exist for random access containers. 
+6.) Indexing and iterator arithmetic only exist for random access containers. 
     All other containers have iterator postfix and prefix increment and decrement.
     And only map has indexing though it is not comparable.
 
