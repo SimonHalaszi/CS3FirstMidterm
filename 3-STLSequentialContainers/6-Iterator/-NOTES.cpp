@@ -30,8 +30,8 @@ int main() {
         - (*) dereferencing provides element access
 
     Member functions that give iterators for containers
-        - c.begin() - Iterator pointing to first element
-        - c.end() - Iterator pointing just past last element
+        - itr = c.begin() - Iterator pointing to first element
+        - itr = c.end() - Iterator pointing just past last element
             - Analogous to the null pointer. Unlike null pointer
             however you can apply decrement to iterator returned
             by c.end() to get an iterator pointing to last element
@@ -40,7 +40,7 @@ int main() {
         - A range between two points that contains all elements
         between them but excludes one of the ends
         - For half-open ranges in c++ this usually excludes the end point
-            - c.erase(it, it2) // does not include it2
+            - itr2 = c.erase(it, it2) // does not include it2
             - str.substr(1, 6) // does not include 6th index in substr
         - Since c.end() goes just past the last element c.begin(), 
         c.end() will be ALL elements in a container.
