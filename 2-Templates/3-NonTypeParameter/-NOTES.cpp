@@ -7,6 +7,10 @@ int main() {
 
     Can have a nontype parameter to a template!
 
+    Non-type template parameters (NTPs) in C++ are template parameters that represent 
+    values rather than types. They allow templates to be parameterized by compile-time 
+    constants, enabling more flexible and powerful generic programming.
+
     Can be of any specific type/class
 
     template<typename T, int size>
@@ -16,7 +20,7 @@ int main() {
             int tos_;    
     };
 
-    Treated as named constant
+    Treated as 
 
     Initalized at instantiation
 
