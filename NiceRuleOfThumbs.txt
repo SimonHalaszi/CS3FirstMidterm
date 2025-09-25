@@ -35,5 +35,7 @@
     operations, accounting for both frequent cheap operations and expensive
     occasional operations.
 
-8.) Nontype template parameters are treated as constants
+8.) Non-type template parameters (NTPs) in C++ are template parameters that represent 
+    values rather than types. They allow templates to be parameterized by compile-time 
+    constants, enabling more flexible and powerful generic programming.
 
