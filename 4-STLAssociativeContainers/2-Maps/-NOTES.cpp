@@ -93,6 +93,9 @@ int main() {
             - map.insert({123, 'j'});
             - map.insert(std::make_pair(123, 'j'));
 
+        - This pair of iterator and bool looks as such
+            - std::pair<std::map<ktype, vtype>::iterator, bool>;
+
         - Can insert with a hint: Suggests optimal insertion position
             - Returns iterator to made or existing pair
             - May ignore hint if it's not optimal
