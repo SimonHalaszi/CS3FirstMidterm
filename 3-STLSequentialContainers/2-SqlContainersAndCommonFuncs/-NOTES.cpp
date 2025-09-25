@@ -80,10 +80,10 @@ int main() {
 
     Common Container Functions
 
-    c.empty() const; // true if there are no elements in c
-    c.size() const; // number of elements in c
-    c.erase(); // removes one or more specific elements of a container
-    c.clear(); // removes all elements from a container
+    bool c.empty() const; // true if there are no elements in c
+    int c.size() const; // number of elements in c
+    itr c.erase(); // removes one or more specific elements of a container
+    void c.clear(); // removes all elements from a container
     c = cc; // containers can be assigned
     c.swap(cc); // swaps contents of c and cc
 
