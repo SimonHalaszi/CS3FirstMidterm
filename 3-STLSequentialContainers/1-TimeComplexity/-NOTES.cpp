@@ -36,9 +36,11 @@ int main() {
             O(n^2)                  -> nested for loops
 
     Amortized Complexity
-        - (Worst Case) Complexity per data item or operation
+        Amortized complexity is the average cost of an operation over a long sequence of
+        operations, accounting for both frequent cheap operations and expensive
+        occasional operations.
         - Think as you run a certain operaiton a lot of time, what
-        will the eventual complexity be?
+        will the eventual average time complexity be?
 
         Example: vector.push_back()
         vector buffer gets doubled everytime client pushes to a full one
