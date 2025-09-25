@@ -24,7 +24,7 @@ int main() {
     an xvalue. std::move(input) produces an xvalue and also
     signifys input as an xvalue. If input was an lvalue
     still falls under lvalue but it has been signified as moved
-    or expired. And the result of std::move(input) is an rvalue.
+    or expired. And the result of std::move(input) is an xvalue.
 
     Examples:
 
@@ -35,10 +35,10 @@ int main() {
     std::string str2 = std::move(str);
     // The term xvalue also refers to lvalues that have been signified as moved or expired. So str is both lvalue and xvalue
 
-    // i is an lvalue | 29 + 32 is a prvalue
+    // i is an lvalue | 10 + 10 is a prvalue
     int i = 10 + 10;
 
-    // i is an lvalue | func(i) returns an lvalue | func(i) + 10 is a prvalue
+    // i is an lvalue | int& func(i) returns an lvalue | func(i) + 10 is a prvalue
     i = func(i) + 10;
 
     std::cout << i << std::endl;
