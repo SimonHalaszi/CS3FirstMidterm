@@ -52,7 +52,7 @@ int main() {
     Lookups
         - With indexing
             map[key]; // Will get value at key
-        - find(key)
+        - itr = find(key)
             - Returns iterator
             - Returns end() if not found
         - Range
@@ -66,6 +66,9 @@ int main() {
             and upper_bound, excluding upper_bound, are within range.
             - Both may return end() if the map is empty, or you put in a value
             greater than highest key value.
+            - itr = lower_bound(1);
+            - itr = upper_bound(2);
+            - itrs that give all elements with keys 1, 2 up to 3 for example
     
     Inserting
         - const maps and maps of constant elements are allowed
