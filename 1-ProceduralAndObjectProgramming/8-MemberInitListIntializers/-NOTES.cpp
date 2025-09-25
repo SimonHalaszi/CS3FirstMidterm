@@ -11,6 +11,8 @@ int main() {
             variableName(value)
         - Appears in constructor definition between function head
         and body following a colon.
+        - Intialize member variables with constructor before their
+        default constructor is invoked
         - Primitive types: Assignment
         - Objects: Constructor is invoked
 
